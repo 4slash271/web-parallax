@@ -42,19 +42,35 @@ html, body{
     color:#111;
     background-color: #fff;
     box-shadow: 0 0 8px rgba(0,0,0,0.5);
+    transition: transform .5s;
+    transition-timing-function: linear;
 }
 
 
 /*********************       main-wrapper    ************************/
 .main-wrapper{
+    display: table;
+    width: 100%;
     height: 100vh;
     background: url("../img/parallax1.jpg") no-repeat center / cover;
     background-attachment: fixed;
 }
 .main-wrapper > .main-wrap{
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
     width: 100%;
     height: 100%;
     background-color: rgba(255, 255, 255, 0.25);
+}
+.main-wrapper > .main-wrap > .logo{
+    display: inline-block;
+    background-color: #222;
+    color: #f9f9f9;
+    padding: .5em .75em;
+    font-size: 1.5em;
+    letter-spacing: .325em;
+
 }
 
 /*********************       about-wrapper    ***********************/
@@ -85,6 +101,11 @@ html, body{
 @media(max-width:768px){}
 
 
-@media(max-width:576px){}
+@media(max-width:576px){
+    .main-wrapper > .main-wrap > .logo > span{
+        display: none;
+    
+    }
+}
 
 
