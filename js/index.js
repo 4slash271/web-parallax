@@ -1,3 +1,5 @@
+
+
 function moveHeader(){
    let scrollTop =document.documentElement.scrollTop;
  
@@ -12,13 +14,11 @@ else {
     $('.header-wrapper').removeClass('active')
 }
 }
-
-
-
-
-
-
+function toggleNavi(){
+    document.querySelector(".mb-navi-wrapper").classList.toggle('active');
+}
 
 
 
 window.addEventListener('scroll', moveHeader);
+document.querySelector(".mb-bars").addEventListener('click',toggleNavi);

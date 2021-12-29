@@ -4,6 +4,8 @@
 html, body{
     font-family: 'Lato',sans-serif;
     height: 8000px;
+    color: #777;
+    
 }
 
 /*********************       header-wrapper    **********************/
@@ -38,12 +40,34 @@ html, body{
     background-color: #f44336;
     color: #f9f9f9;
 }
+.header-wrapper > .mb-bars{
+    float: right;
+    display: none;
+    padding: 1em;
+    cursor: pointer;
+}
+.header-wrapper > .mb-bars:hover{
+    background-color: #111;
+    color: #f9f9f9;
+}
 .header-wrapper.active{
     color:#111;
     background-color: #fff;
     box-shadow: 0 0 8px rgba(0,0,0,0.5);
     transition: transform .5s;
     transition-timing-function: linear;
+}
+.mb-navi-wrapper{
+    position: fixed;
+    display: none;
+    width: 100%;
+    background-color: #fff;
+}
+.mb-navi-wrapper > .mb-navi{
+    padding: 1em;
+}
+.mb-navi-wrapper > .mb-navi:hover{
+    background-color: #eee;
 }
 
 
@@ -73,6 +97,7 @@ html, body{
 
 }
 
+
 /*********************       about-wrapper    ***********************/
 
 
@@ -98,8 +123,21 @@ html, body{
 @media(max-width:992px){}
 
 
-@media(max-width:768px){}
+@media(max-width:768px){
+    .header-wrapper > .navi-wrap > .navi:not(:first-child){
+        display: none;
+    }
+    .header-wrapper > .search{
+        display: none;
+    }
 
+    .header-wrapper > .mb-bars{
+        display: block;
+    }
+    .mb-navi-wrapper.active{
+        display: block;
+    }
+ 
 
 @media(max-width:576px){
     .main-wrapper > .main-wrap > .logo > span{
