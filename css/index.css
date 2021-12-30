@@ -26,7 +26,23 @@ section.wrapper > h3.title{
     font-style: italic;
     line-height: 1.5;
 }
-
+aside.title-bar{
+    font-size: 1.75em;
+    letter-spacing: 0.325em;
+    text-align: center;
+    color: #ccc;
+    padding:5em;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+aside.pf-bar{
+    background-image: url(../img/parallax2.jpg);
+}
+aside.contact-bar{
+    background-image: url(../img/parallax3.jpg);
+}
 /*********************       header-wrapper    **********************/
 .header-wrapper{
     color: #777;
