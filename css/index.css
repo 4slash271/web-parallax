@@ -4,6 +4,7 @@
 html, body{
     font-family: 'Lato',sans-serif;
     height: 8000px;
+    line-height: 1.5;
     color: #777;
 }
 .wrapper{
@@ -25,6 +26,10 @@ section.wrapper > h2.title{
 section.wrapper > h3.title{
     font-style: italic;
     line-height: 1.5;
+}
+section > p{
+    line-height: 1.5;
+    margin-bottom: 1.25em;
 }
 aside.title-bar{
     font-size: 1.75em;
@@ -134,6 +139,10 @@ aside.contact-bar{
 
 
 /*********************       about-wrapper    ***********************/
+.about-wrap{}
+.about-wrap > div{}
+.about-wrap > .photo-wrap{}
+.about-wrap > .content-wrap{}
 
 
 /*********************       pf-wrapper    **************************/
