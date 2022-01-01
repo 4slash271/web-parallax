@@ -27,9 +27,8 @@ section.wrapper > h3.title{
     font-style: italic;
     line-height: 1.5;
 }
-section > p{
-    line-height: 1.5;
-    margin-bottom: 1.25em;
+section > p.content{
+    margin-bottom: 1.5em;
 }
 aside.title-bar{
     font-size: 1.75em;
@@ -53,6 +52,7 @@ aside.contact-bar{
     color: #777;
     position: fixed;
     width: 100%;
+    line-height: 1;
     z-index: 9;
 }
 .header-wrapper > .navi-wrap{
@@ -140,8 +140,21 @@ aside.contact-bar{
 
 /*********************       about-wrapper    ***********************/
 .about-wrap{}
-.about-wrap > div{}
-.about-wrap > .photo-wrap{}
+.about-wrap > div{
+    width: 50%;
+    float: left;
+    padding:1em;
+}
+.about-wrap > .photo-wrap{
+    text-align: center;
+}
+.about-wrap > .photo-wrap > .name{
+    margin-bottom: 2em;
+}
+.about-wrap > .photo-wrap > .photo{
+    border-radius: 5px;
+    overflow: hidden;
+}
 .about-wrap > .content-wrap{}
 
 
