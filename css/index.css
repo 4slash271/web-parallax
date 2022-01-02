@@ -26,16 +26,17 @@ section.wrapper > h2.title{
 section.wrapper > h3.title{
     font-style: italic;
     line-height: 1.5;
+    margin-bottom: 1.5em;
 }
 section > p.content{
     margin-bottom: 1.5em;
 }
 aside.title-bar{
-    font-size: 1.75em;
+    font-size: 2em;
     letter-spacing: 0.325em;
     text-align: center;
     color: #ccc;
-    padding:5em;
+    padding:5em 0;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -47,6 +48,8 @@ aside.pf-bar{
 aside.contact-bar{
     background-image: url(../img/parallax3.jpg);
 }
+
+
 /*********************       header-wrapper    **********************/
 .header-wrapper{
     color: #777;
@@ -139,7 +142,12 @@ aside.contact-bar{
 
 
 /*********************       about-wrapper    ***********************/
-.about-wrap{}
+.about-wrapper{
+    text-align: justify;
+}
+.about-wrap{
+    margin-bottom: 2em;
+}
 .about-wrap > div{
     width: 50%;
     float: left;
@@ -155,9 +163,68 @@ aside.contact-bar{
     border-radius: 5px;
     overflow: hidden;
 }
-.about-wrap > .content-wrap{}
+.about-wrap > .photo-wrap > .photo > img{
+    transition: all .5s;
+}
+.about-wrap > .photo-wrap > .photo:hover > img{
+    transform: scale(1.1);
+}
+.skill-wrapper{}
+.skill-wrapper > .title{
+    text-align: center;
+    font-size: 1.125em;
+    margin-bottom: 2em;
+}
+.skill-wrapper > .skill-wrap > .skill {margin-bottom: 1.5em;}
+.skill-wrapper > .skill-wrap > .skill > .title{
+    letter-spacing: .5em;
+    margin-bottom: .75em;
+}
+.skill-wrapper > .skill-wrap > .skill > .bar-wrap{
+    background-color: #eee;
+    position: relative;
+}
+.skill-wrapper > .skill-wrap > .skill > .bar-wrap > .bar{
+    background-color: #444;
+    color: #f9f9f9;
+    text-align: center;
+    padding: 1.25em;
+    animation-duration: 1s; 
+    animation-fill-mode: forwards;
+}
+.skill-wrapper > .skill-wrap > .skill:nth-child(1) > .bar-wrap > .bar{
+    width: 90%;
+}
+.skill-wrapper > .skill-wrap > .skill:nth-child(2) > .bar-wrap > .bar{
+    width: 85%;
+}
+.skill-wrapper > .skill-wrap > .skill:nth-child(3) > .bar-wrap > .bar{
+    width: 70%;
+}
+.skill-wrapper > .skill-wrap > .skill > .bar-wrap > .bar > span {position: absolute; top: 0.5em;}
+.skill-wrapper > .skill-wrap > .skill:nth-child(1) > .bar-wrap > .bar > span {left: 45%;}
+.skill-wrapper > .skill-wrap > .skill:nth-child(2) > .bar-wrap > .bar > span {left: 40%;}
+.skill-wrapper > .skill-wrap > .skill:nth-child(3) > .bar-wrap > .bar > span {left: 32.5%;}
+
+.skill-wrapper > .skill-wrap > .skill:nth-child(1):hover > .bar-wrap > .bar {animation-name: bar1;}
+.skill-wrapper > .skill-wrap > .skill:nth-child(2):hover > .bar-wrap > .bar {animation-name: bar2;}
+.skill-wrapper > .skill-wrap > .skill:nth-child(3):hover > .bar-wrap > .bar {animation-name: bar3;}
 
 
+@keyframes bar1 {
+	from {width: 0;}
+	to {width: 95%;}
+}
+
+@keyframes bar2 {
+	from {width: 0;}
+	to {width: 85%;}
+}
+
+@keyframes bar3 {
+	from {width: 0;}
+	to {width: 70%;}
+}
 /*********************       pf-wrapper    **************************/
 
 
@@ -193,6 +260,9 @@ aside.contact-bar{
     }
     .mb-navi-wrapper.active{
         display: block;
+    }
+    .about-wrap > div{
+        width: 100%;
     }
  
 
