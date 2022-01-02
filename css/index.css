@@ -225,6 +225,25 @@ aside.contact-bar{
 	from {width: 0;}
 	to {width: 70%;}
 }
+/*********************       client-bar    **************************/
+.client-bar{
+    background-color: #333;
+    color: #f9f9f9;
+    text-align: center;
+}
+.client-bar > .client-wrap{
+    width: 100%; 
+    background-color: #333;
+    color: #f9f9f9;
+}
+.client-bar > .client-wrap > .client{
+    width: 25%;
+    padding: 2em;
+    float: left;
+}
+.client-bar > .client-wrap > .client > h4.count{
+    font-size: 2em;
+}
 /*********************       pf-wrapper    **************************/
 
 
@@ -263,6 +282,10 @@ aside.contact-bar{
     }
     .about-wrap > div{
         width: 100%;
+    }
+    .client-bar > .client-wrap > .client{
+        width: 100%;
+        border-bottom: 1px solid #444;
     }
  
 
