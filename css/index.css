@@ -245,6 +245,28 @@ aside.contact-bar{
     font-size: 2em;
 }
 /*********************       pf-wrapper    **************************/
+.pf-wrapper{
+    overflow: hidden;
+}
+.pf-wrapper > .pf-wrap{
+    width: 102%;
+}
+.pf-wrapper > .pf-wrap > .pf{
+    float: left;
+    width: 23%;
+    margin: 0 2% 2% 0;
+    cursor: pointer;
+    overflow: hidden;
+    background-color: #000;
+}
+.pf-wrapper > .pf-wrap > .pf > .img{
+    transition: all .35s;
+}
+.pf-wrapper > .pf-wrap > .pf:hover > img{
+    opacity: .75;
+    transform: scale(1.1);
+
+}
 
 
 /*********************       contact-wrapper    *********************/
@@ -263,7 +285,11 @@ aside.contact-bar{
 @media(max-width:1200px){}
 
 
-@media(max-width:992px){}
+@media(max-width:992px){
+    .pf-wrapper > .pf-wrap > .pf{
+        width: 48%;
+    }
+}
 
 
 @media(max-width:768px){
@@ -293,6 +319,9 @@ aside.contact-bar{
     .main-wrapper > .main-wrap > .logo > span{
         display: none;
     
+    }
+    .pf-wrapper > .pf-wrap > .pf{
+        width: 98%;
     }
 }
 
