@@ -3,7 +3,6 @@
 /**************************    common    ****************************/
 html, body{
     font-family: 'Lato',sans-serif;
-    height: 8000px;
     line-height: 1.5;
     color: #777;
 }
@@ -335,7 +334,41 @@ aside.contact-bar{
 
 
 /*********************       footer-wrapper    **********************/
-
+.footer-wrapper{
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #f9f9f9;
+    padding: 6em 1em 8em 1em;
+    text-align: center;
+}
+.footer-wrapper:hover{
+    background-color:rgba(0, 0, 0, 0.4);
+}
+.footer-wrapper > .bt-top{
+    background-color: #ddd;
+    color: #222;
+    padding: 0.625em 1em;
+    margin-bottom: 1.5em;
+    cursor: pointer;
+}
+.footer-wrapper > .bt-top:hover{
+    background-color: #ccc;
+}
+.footer-wrapper > .sns-wrap{
+    text-align: center;
+    margin-bottom: 1.5em;
+}
+.footer-wrapper > .sns-wrap > .sns{
+    display: inline-block;
+    letter-spacing: .25em;
+    font-size: 1.25em;
+}
+.footer-wrapper > .copyright > a:link{
+    text-decoration: underline;
+}
+.footer-wrapper > .copyright > a:hover{
+    color: #0aac0a;
+    text-decoration: underline;
+}
 
 /*********************       modal-wrapper    **********************/
 .modal-wrapper{
@@ -413,6 +446,20 @@ aside.contact-bar{
         width: 100%;
         border-bottom: 1px solid #444;
     }
+	.contact-wrapper > .contact-outwrap > .location-inwrap {
+        width: 100%;
+    }
+	.contact-wrapper > .contact-outwrap > .info-inwrap {
+        width: 100%; 
+        padding-top: 3%; 
+        padding-left: 0;
+    }
+	aside.title-bar {
+        background-attachment: unset;
+    }
+	.main-wrapper {
+        background-attachment: unset;
+    }
  
 
 @media(max-width:576px){
@@ -423,6 +470,13 @@ aside.contact-bar{
     .pf-wrapper > .pf-wrap > .pf{
         width: 98%;
     }
+    .contact-wrapper > .contact-outwrap > .info-inwrap > .form-wrap > input:nth-child(1) {
+        width: 100%;
+    }
+	.contact-wrapper > .contact-outwrap > .info-inwrap > .form-wrap > input:nth-child(2) {
+        width: 100%;
+    }
+}
 }
 
 
