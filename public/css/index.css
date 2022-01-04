@@ -172,7 +172,6 @@ aside.contact-bar{
 .about-wrap > .photo-wrap > .photo:hover > img{
     transform: scale(1.1);
 }
-.skill-wrapper{}
 .skill-wrapper > .title{
     text-align: center;
     font-size: 1.125em;
@@ -281,8 +280,7 @@ aside.contact-bar{
 
 
 /*********************       contact-wrapper    *********************/
-.contact-wrapper{}
-.contact-wrapper > .contact-outwrap{}
+
 .contact-wrapper > .contact-outwrap > .location-inwrap{
     width: 30%;
     float: left;
