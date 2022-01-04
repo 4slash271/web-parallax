@@ -278,6 +278,60 @@ aside.contact-bar{
 
 
 /*********************       contact-wrapper    *********************/
+.contact-wrapper{}
+.contact-wrapper > .contact-outwrap{}
+.contact-wrapper > .contact-outwrap > .location-inwrap{
+    width: 30%;
+    float: left;
+}
+.contact-wrapper > .contact-outwrap > .location-inwrap > img{
+    border-radius: 5px;
+}
+.contact-wrapper > .contact-outwrap > .info-inwrap{
+    float: right;
+    width: 70%;
+    padding-left: 3%;
+}
+.contact-wrapper > .contact-outwrap > .info-inwrap > .info-wrap {
+    margin-bottom: 1em;
+}
+.contact-wrapper > .contact-outwrap > .info-inwrap > .info-wrap > .info{
+    font-size: 1.125em;
+    margin-bottom: 0.25em;
+}
+.contact-wrapper > .contact-outwrap > .info-inwrap > .info-wrap > .info > .fa {
+    width: 40px;
+}
+.contact-wrapper > .contact-outwrap > .info-inwrap > .desc-wrap {
+    margin-bottom: 1em;
+}
+
+.contact-wrapper > .contact-outwrap > .info-inwrap > .form-wrap > input{
+    padding: 0.625em; 
+    width: 49%;
+    border: 1px solid #ccc; 
+    margin-bottom: 0.75em;
+}
+.contact-wrapper > .contact-outwrap > .info-inwrap > .form-wrap > input:nth-child(1){
+    float: left;
+}
+.contact-wrapper > .contact-outwrap > .info-inwrap > .form-wrap > input:nth-child(2){
+    float: right;
+}
+.contact-wrapper > .contact-outwrap > .info-inwrap > .form-wrap > input:nth-child(3){
+    width: 100%;
+}
+.contact-wrapper > .contact-outwrap > .info-inwrap > .form-wrap > button {
+    float: right; 
+    background-color: #111; 
+    color: #f9f9f9; 
+    padding: 0.75em; 
+    line-height: 1;
+}
+.contact-wrapper > .contact-outwrap > .info-inwrap > .form-wrap > button:hover {
+    background-color: #ccc; 
+    color: #111;
+}
 
 
 /*********************       footer-wrapper    **********************/
