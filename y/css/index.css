@@ -104,14 +104,17 @@ aside.contact-bar{
     display: none;
     width: 100%;
     background-color: #fff;
-    /* z-index: 8; */
+    top:48px;
+    z-index: 8;
 }
-.mb-navi-wrapper > .mb-navi{
+.mb-navi-wrapper > .mb-navi > a{
     padding: 1em;
+    display: block;
 }
 .mb-navi-wrapper > .mb-navi:hover{
     background-color: #eee;
 }
+
 
 
 /*********************       main-wrapper    ************************/
