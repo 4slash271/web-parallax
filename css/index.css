@@ -247,6 +247,7 @@ aside.contact-bar{
 /*********************       pf-wrapper    **************************/
 .pf-wrapper{
     overflow: hidden;
+    text-align: center;
 }
 .pf-wrapper > .pf-wrap{
     width: 102%;
@@ -265,7 +266,14 @@ aside.contact-bar{
 .pf-wrapper > .pf-wrap > .pf:hover > img{
     opacity: .75;
     transform: scale(1.1);
-
+}
+.pf-wrapper > .bt-more {
+    padding: 0.75em 1.25em; 
+    background-color: #eee; 
+    color: #111;
+}
+.pf-wrapper > .bt-more:hover {
+    background-color: #bbb;
 }
 
 
@@ -277,6 +285,7 @@ aside.contact-bar{
 
 /*********************       modal-wrapper    **********************/
 .modal-wrapper{
+    display: none;
     position: fixed;
     z-index:10;
     width: 100%;
@@ -286,24 +295,31 @@ aside.contact-bar{
     top: 0;
     left: 0;
     text-align: center;
-    padding-top: 20vh;
+    padding: 20vh 2% 10vh 2%;
 }
 .modal-wrapper > .modal-wrap{
     display: inline-block;
+    transition: all .5s;
 }
-.modal-wrapper > .modal-close{
-    top:0;
-    right: 0;
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    line-height: 50px;
+.modal-wrapper > .modal-wrap > .modal-img {
+    margin-bottom: 1em;
+}
+
+
+.modal-wrapper > .modal-close {
+    position: absolute; 
+    top: 0; 
+    right: 0; 
+    width: 50px; 
+    height: 50px; 
+    line-height: 50px; 
     cursor: pointer;
 }
-.modal-wrapper > .modal-close:hover{
-    background-color: #ccc;
+.modal-wrapper > .modal-close:hover {
+    background-color: #ccc; 
     color: #111;
 }
+
 
 
 
